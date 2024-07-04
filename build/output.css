@@ -612,9 +612,11 @@ video {
   left: 0px;
   right: 0px;
   top: 4rem;
-  display: none;
+  display: flex;
   height: 100vh;
   width: 100vw;
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
   align-items: center;
   overflow: hidden;
@@ -955,8 +957,28 @@ video {
   height: 100%;
 }
 
+.min-h-64 {
+  min-height: 16rem;
+}
+
+.min-h-72 {
+  min-height: 18rem;
+}
+
 .min-h-80 {
   min-height: 20rem;
+}
+
+.min-h-60 {
+  min-height: 15rem;
+}
+
+.min-h-56 {
+  min-height: 14rem;
+}
+
+.min-h-52 {
+  min-height: 13rem;
 }
 
 .w-12 {
@@ -1204,6 +1226,10 @@ video {
 
 .snap-always {
   scroll-snap-stop: always;
+}
+
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
 }
 
 .list-inside {
@@ -2264,6 +2290,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -2286,6 +2316,10 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
 }
 
 .text-left {
@@ -2884,6 +2918,22 @@ header {
   min-height: calc(100vh - 4rem);
 }
 
+.xbtn {
+  display: none;
+}
+
+.sideBarOpen .btnMenu {
+  display: none;
+}
+
+.sideBarOpen .xbtn {
+  display: flex;
+}
+
+.sideBar.openSideBar {
+  transform: translateX(0);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3047,6 +3097,10 @@ header {
     display: grid;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-full {
     width: 100%;
   }
@@ -3112,8 +3166,16 @@ header {
     padding-right: 1.5rem;
   }
 
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pb-60 {
     padding-bottom: 15rem;
+  }
+
+  .md\:pt-28 {
+    padding-top: 7rem;
   }
 
   .md\:text-left {
@@ -3146,6 +3208,10 @@ header {
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 
   .lg\:gap-24 {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   </head>
   <body class="relative scroll-smooth">
     <!-- nav bar -->
-    <nav class="bg-primary px-6 fixed top-0 left-0 right-0 z-50">
+    <nav class="bg-primary px-6 fixed top-0 left-0 right-0 z-50 mainNav">
       <div class="flex justify-between items-center py-2 max-w-8xl mx-auto">
         <!-- logo  -->
         <div class="flex items-center gap-2">
@@ -25,12 +25,15 @@
           </h2>
         </div>
         <!-- hamburger button  -->
-        <button class="btnMenu">
-          <i class="fa-solid fa-bars ham"></i>
-        </button>
-        <button class="xbtn text-light-gray hidden font-bold text-2xl">
-          <i class="fa-regular fa-x xbtn"></i>
-        </button>
+        <div class="navBtns md:hidden">
+          <button class="btnMenu">
+            <i class="fa-solid fa-bars ham"></i>
+          </button>
+          <button class="xbtn text-light-gray font-bold text-2xl">
+            <i class="fa-regular fa-x xbtn"></i>
+          </button>
+        </div>
+
         <!-- navlinks -->
 
         <ul class="hidden md:flex text-light-gray gap-4 capitalize">
@@ -95,11 +98,13 @@
     </header>
 
     <!-- ABOUT US STARTS -->
-    <div class="bg-light-gray relative -z-10">
+    <div
+      class="bg-light-gray relative -z-10 scroll-mt-16 pb-20 md:pb-10"
+      id="about"
+    >
       <div></div>
       <h1
-        class="text-black font-bold text-4xl uppercase pt-20 lg:mt-16 pb-4 text-center md:absolute md:top-0 md:-translate-y-1/2 md:left-6 md:translate-x-1/2 relative md:border-b-4 border-b-secondary"
-        id="about"
+        class="text-black font-bold text-4xl uppercase pt-28 lg:mt-16 pb-4 text-center md:absolute md:top-0 md:-translate-y-1/2 md:left-6 md:translate-x-1/2 relative md:border-b-4 border-b-secondary"
       >
         about us
       </h1>
@@ -112,7 +117,7 @@
         <!-- About text content starts  -->
         <div class="grid">
           <p
-            class="text-black font-bold text-lg text-center tracking-tighter lg:tracking-wide leading-10 md:text-left md:items-center"
+            class="text-black font-bold text-lg text-center tracking-tighter lg:tracking-wide leading-10 md:text-left md:items-center md:pt-28"
           >
             We at Coffee House, located in Berndorf, Germany, are one of the
             favorite hangouts for coffee and conversations. Our goal is to offer
@@ -137,11 +142,10 @@
     <!-- ABOUT ENDS -->
 
     <!-- SERVICES STARTS  -->
-    <div class="bg-black">
+    <div class="bg-black scroll-mt-16 pb-24" id="services">
       <div class="capitalize">
         <h1
-          class="text-light-gray font-bold text-4xl uppercase pt-20 lg:mt-16 pb-4 text-center"
-          id="services"
+          class="text-light-gray font-bold text-4xl uppercase pt-20 pb-4 text-center"
         >
           Our services
         </h1>
@@ -256,11 +260,10 @@
       </div>
     </div>
     <!-- WHY US STARTS -->
-    <div class="bg-light-gray">
+    <div class="bg-light-gray scroll-mt-16 pb-20" id="whyus">
       <div class="capitalize">
         <h1
           class="text-black font-bold text-4xl uppercase pt-20 pb-4 text-center"
-          id="whyus"
         >
           WHY US
         </h1>
@@ -270,11 +273,11 @@
       </div>
       <!-- list of services  -->
       <div
-        class="mt-4 grid gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-24 place-content-center"
+        class="mt-4 grid gap-2 md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-2 place-content-center"
       >
         <!-- first service-----  -->
-        <div class="flex flex-col items-center min-h-80">
-          <div class="grid place-content-center min-h-80 sm:grid sm:gap-0">
+        <div class="flex flex-col items-center min-h-72">
+          <div class="grid place-content-center min-h-52 sm:grid sm:gap-0">
             <img src="./images/delicious.png" alt="" class="max-w-32 mx-auto" />
           </div>
           <div class="text-black p-2 m-4 space-y-6 space-x-4">
@@ -286,8 +289,8 @@
           </div>
         </div>
         <!-- SECOND service-----  -->
-        <div class="flex flex-col items-center min-h-80">
-          <div class="grid place-content-center min-h-80">
+        <div class="flex flex-col items-center min-h-72">
+          <div class="grid place-content-center min-h-52">
             <img src="./images/pleasant.png" alt="" class="max-w-32 mx-auto" />
           </div>
           <div class="text-black p-2 m-4 space-y-6 space-x-4">
@@ -302,8 +305,8 @@
 
         <!-- REFRESHMENT STARTS  -->
 
-        <div class="flex flex-col items-center min-h-80">
-          <div class="grid place-content-center min-h-80">
+        <div class="flex flex-col items-center min-h-72">
+          <div class="grid place-content-center min-h-52">
             <img
               src="./images/hospitality.png"
               alt=""
@@ -322,11 +325,10 @@
     </div>
 
     <!-- GALLERY STARTS -->
-    <div class="bg-white">
+    <div class="bg-white scroll-mt-16 pb-20" id="gallery">
       <div class="capitalize">
         <h1
           class="text-black font-bold text-4xl uppercase pt-20 pb-4 text-center"
-          id="gallery"
         >
           gallery
         </h1>
@@ -386,11 +388,10 @@
     </div>
 
     <!-- CONTACT US STARTS  -->
-    <div class="bg-light-gray">
+    <div class="bg-light-gray scroll-mt-16 pb-20" id="contact">
       <div class="capitalize">
         <h1
           class="text-black font-bold text-4xl uppercase pt-20 pb-4 text-center"
-          id="contact"
         >
           contact us
         </h1>
@@ -608,35 +609,35 @@
         <li>
           <a
             href="#about"
-            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out"
+            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out sideBarNav"
             >About</a
           >
         </li>
         <li>
           <a
             href="#services"
-            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out"
+            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out sideBarNav"
             >Services</a
           >
         </li>
         <li>
           <a
             href="#whyus"
-            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out"
+            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out sideBarNav"
             >Why us</a
           >
         </li>
         <li>
           <a
             href="#gallery"
-            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out"
+            class="hover:bg-secondary rounded-full px-10 py-3 transition-all duration-500 ease-out sideBarNav"
             >Gallery</a
           >
         </li>
         <li>
           <a
             href="#contact"
-            class="hover:bg-secondary rounded-full px-10 py-2 transition-all duration-500 ease-out"
+            class="hover:bg-secondary rounded-full px-10 py-2 transition-all duration-500 ease-out sideBarNav"
             >Contact</a
           >
         </li>

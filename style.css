@@ -7,7 +7,7 @@
     @apply hover:bg-secondary rounded-full py-2 px-6 transition-all duration-300 ease-in font-semibold;
   }
   .sideBar {
-    @apply hidden flex-col items-center md:hidden bg-light-gray/40 backdrop-blur-md  h-screen fixed  bottom-0 duration-500 left-0 right-0 top-16 w-screen   ease-in transition-all overflow-hidden brightness-100 border-light-gray/40;
+    @apply flex flex-col items-center md:hidden bg-light-gray/40 backdrop-blur-md -translate-x-full h-screen fixed  bottom-0 duration-500 left-0 right-0 top-16 w-screen   ease-in transition-all overflow-hidden brightness-100 border-light-gray/40;
   }
 
   .btnMenu {
@@ -19,4 +19,17 @@ nav {
 }
 header {
   min-height: calc(100vh - 4rem);
+}
+.xbtn {
+  display: none;
+}
+.sideBarOpen .btnMenu {
+  display: none;
+}
+
+.sideBarOpen .xbtn {
+  display: flex;
+}
+.sideBar.openSideBar {
+  transform: translateX(0);
 }
